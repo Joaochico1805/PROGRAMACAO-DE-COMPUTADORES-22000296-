@@ -1,17 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 #include <string.h>
 
-//Faça um programa que leia um número que represente um determinado mês do ano. Após a leitura escreva por extenso qual o mês lido. Caso o número digitado não esteja na faixa de 1 até 12 e escreva uma mensagem informando o usuário do erro da digitação. Observação: use estrutura switch.
+//FaÃ§a um programa que leia um nÃºmero que represente um determinado mÃªs do ano. ApÃ³s a leitura escreva por extenso qual o mÃªs lido. Caso o nÃºmero digitado nÃ£o esteja na faixa de 1 atÃ© 12 e escreva uma mensagem informando o usuÃ¡rio do erro da digitaÃ§Ã£o. ObservaÃ§Ã£o: use estrutura switch.
 
 int main() {
-
-    setlocale(LC_ALL, "Portuguese");
     
     int mes;
 
-    printf("Digite o número do mês (1 a 12): ");
+    printf("Digite o nÃºmero do mÃªs (1 a 12): ");
     scanf("%d", &mes);  
 
     switch(mes){
@@ -22,7 +19,7 @@ int main() {
             printf("Fevereiro\n");
             break;
         case 3:
-            printf("Março\n");
+            printf("MarÃ§o\n");
             break;
         case 4:
             printf("Abril\n");
@@ -52,7 +49,7 @@ int main() {
             printf("Dezembro\n");
             break;
         default:
-            printf("Mês inválido.\n");
+            printf("MÃªs invÃ¡lido.\n");
     }
 
     return 0;
